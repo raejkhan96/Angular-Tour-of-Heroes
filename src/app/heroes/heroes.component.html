@@ -1,3 +1,8 @@
-<h2>{{hero.name | uppercase}} Details</h2>
-<div><span>id: </span>{{hero.id}}</div>
-<div><span>name: </span>{{hero.name}}</div>
+<h2> {{hero.name | uppercase}}</h2>
+<div>
+    <label for="name">Hero name: </label>
+    <!-- ngModel is Angular's 2 way binding syntax
+    It binds the her.name property to the HTML text box so that the data can flow
+    in both directions - from text box to the hero.name property and back-->
+    <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
