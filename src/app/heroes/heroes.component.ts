@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
+import { HEROES } from '../mock-heroes';
 
 @Component({
   // selector is a pattern of elements that tells the browser which HTML elements should be selected
@@ -9,6 +10,8 @@ import { Hero } from '../hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+
+  heroes = HEROES;
 
   constructor() { }
 
